@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauticActionWorker", "MauticActionWorker\MauticActionWorker.csproj", "{034E34AC-33B5-4323-B7CD-002537CD22EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmtechActions", "EmtechActions\EmtechActions.csproj", "{BFFB7F7E-3506-43B9-88D0-8B53A4FFC7AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmtechActionsUnitTests", "EmtechActionsUnitTests\EmtechActionsUnitTests.csproj", "{95731244-1F20-4D25-9CD7-3FA20F3819D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{034E34AC-33B5-4323-B7CD-002537CD22EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{034E34AC-33B5-4323-B7CD-002537CD22EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{034E34AC-33B5-4323-B7CD-002537CD22EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{034E34AC-33B5-4323-B7CD-002537CD22EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFFB7F7E-3506-43B9-88D0-8B53A4FFC7AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFFB7F7E-3506-43B9-88D0-8B53A4FFC7AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFFB7F7E-3506-43B9-88D0-8B53A4FFC7AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFFB7F7E-3506-43B9-88D0-8B53A4FFC7AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95731244-1F20-4D25-9CD7-3FA20F3819D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95731244-1F20-4D25-9CD7-3FA20F3819D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95731244-1F20-4D25-9CD7-3FA20F3819D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95731244-1F20-4D25-9CD7-3FA20F3819D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
