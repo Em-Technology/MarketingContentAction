@@ -12,4 +12,27 @@
     <ItemGroup>
       <ProjectReference Include="..\EmtechActions\EmtechActions.csproj" />
     </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="out\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="out\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="out\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="out\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="out\appsettings.Development.json" />
+      <_ContentIncludedByDefault Remove="out\appsettings.json" />
+      <_ContentIncludedByDefault Remove="out\MauticActionWorker.deps.json" />
+      <_ContentIncludedByDefault Remove="out\MauticActionWorker.runtimeconfig.json" />
+    </ItemGroup>
 </Project>
