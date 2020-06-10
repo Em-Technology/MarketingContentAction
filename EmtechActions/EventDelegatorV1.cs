@@ -14,9 +14,10 @@ namespace EmtechActions
 
     public EventDelegatorV0(ILogger<IEventDelegator> logger) => _logger = logger;
 
-    public int Run(EventWrapper<FakeEvent> wrapper)
+    public int Run(EventWrapper wrapper)
     {
-      _logger.Log(wrapper.);
+      _logger.LogInformation(wrapper.ToString());
+      return 0;
     }
     
   }

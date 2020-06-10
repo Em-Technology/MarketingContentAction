@@ -1,13 +1,15 @@
 ﻿namespace EmtechActions.Events
 {
-    public class EventWrapper<T> where T : FakeEvent
+    public class EventWrapper
     {
+        public FakeEvent Event { get; }
+
         public EventWrapper(object payload)
         {
             Event = new FakeEvent();
         }
 
-        internal d Event  { get; private set; } 
+        
 
       
     }
