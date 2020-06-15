@@ -1,0 +1,42 @@
+﻿# action name
+name: 'content-update'
+
+author: 'Em Jones <emjonesdev@gmail.com>'
+
+description: 'Using some metadata as defined by your subscriber, update your downstream dependencies with new content updates.'
+
+inputs: 
+  postEndpoint:
+    description: 'Tell us where your content is headed'
+    required: true
+  filterType:
+    description: ''
+    default: 'fs'
+    required: false
+  filterField: 
+    description: 'The field by which filtering is done'
+    default: 'blog'
+    required: false
+  filterValue:
+    description: 'The value by which content is filtered'
+    default: 'false'
+    required: false
+  authToken: 
+    description: 'Authentication token'
+    required: true
+  contentField:
+    description: 'The field name from which the content will be retrieved. Use body to ignore frontmatter'
+    default: 'body'
+    required: false
+  sourceType:
+    description: 'The file type used to manage your content. ("adoc" and "md" currently supported)'
+    default: 'md'
+    required: false
+  metadataFields:
+    description: 'Comma-separated list of metadata fields to be retrieved from your content (All returned by default)'
+    default: ''
+    required: false
+runs: 
+  using: 'docker'
+  image: 'Dockerfile'
+  

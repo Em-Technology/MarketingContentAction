@@ -8,9 +8,6 @@
         {
             Event = new FakeEvent();
         }
-
-        
-
       
     }
 }
