@@ -18,4 +18,8 @@
       <ProjectReference Include="..\MauticActionWorker\MauticActionWorker.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Fixtures" />
+    </ItemGroup>
+
 </Project>

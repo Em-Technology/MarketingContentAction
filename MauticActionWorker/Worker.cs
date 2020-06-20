@@ -2,7 +2,6 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 using EmtechActions;
-using EmtechActions.Events;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
@@ -11,19 +10,19 @@ namespace MauticActionWorker
   public class Worker : BackgroundService
   {
     private readonly ILogger<Worker> _logger;
-    private readonly IEventDelegator _eventDelegator;
+    private readonly IActionRunner _actionRunner;
 
-    public Worker(ILogger<Worker> logger, IEventDelegator eventDelegator)
+    public Worker(ILogger<Worker> logger, IActionRunner actionRunner)
     {
       _logger = logger;
-      _eventDelegator = eventDelegator;
+      _actionRunner = actionRunner;
     }
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
       while (!stoppingToken.IsCancellationRequested)
       {
-        _eventDelegator.Run(new EventWrapper(new { }));
+        _actionRunner.Run();
         _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
         await Task.Delay(1000, stoppingToken);
       }

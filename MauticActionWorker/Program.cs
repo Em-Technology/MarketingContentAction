@@ -1,10 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using EmtechActions;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using EmtechActions;
 
 namespace MauticActionWorker
 {
@@ -20,7 +16,7 @@ namespace MauticActionWorker
         .ConfigureServices((hostContext, services) =>
         {
           services.AddHostedService<Worker>();
-          services.AddSingleton<IEventDelegator, EventDelegatorV0>();
+          services.AddSingleton<IActionRunner, MarketingActionRunner>();
         });
   }
 }
