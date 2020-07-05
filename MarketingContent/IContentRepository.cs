@@ -1,4 +1,7 @@
-﻿namespace MarketingContent
+﻿using System.Runtime.CompilerServices;
+
+[assembly: InternalsVisibleTo("EmtechActionsTests")]
+namespace MarketingContent
 {
     internal interface IContentRepository
     {
