@@ -1,4 +1,4 @@
-﻿# action name
+
 name: 'content-update'
 
 author: 'Em Jones <emjonesdev@gmail.com>'
@@ -6,28 +6,12 @@ author: 'Em Jones <emjonesdev@gmail.com>'
 description: 'Using some metadata as defined by your subscriber, update your downstream dependencies with new content updates.'
 
 inputs: 
-  postEndpoint:
+  marketingServer:
     description: 'Tell us where your content is headed'
     required: true
-  authToken:
+  token:
     description: 'Authentication token'
     required: true
-  filters: 
-    description: 'Filters'
-    required: false
-  contentField:
-    description: 'The field name from which the content will be retrieved. Use body to ignore frontmatter'
-    default: 'body'
-    required: false
-  sourceType:
-    description: 'The file type used to manage your content. ("md" currently supported)'
-    default: 'md'
-    required: false
-  metadataFields:
-    description: 'list of fields to include in the metadata of the content payload'
-    default: ''
-    required: false
 runs: 
   using: 'docker'
   image: 'Dockerfile'
-  
