@@ -2,7 +2,6 @@
 // Implement the interface of the EventDelegator type
 // Should simply log events for the time being
 
-using System.Text;
 using EmtechActions.Events;
 using Microsoft.Extensions.Logging;
 

@@ -1,0 +1,10 @@
+name: 'Mautic Content'
+description: 'Updates to content folder markdown files are forwarded on to mautic platform'
+inputs: 
+  mautic-server:
+    description: 'Location of the mautic service'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args: 
+    - ${{ inputs.mautic-server }}

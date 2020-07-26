@@ -1,10 +1,14 @@
 ﻿FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build-env
 WORKDIR /app/worker
 COPY EmtechActions/ /app/EmtechActions
+COPY .config/ ./
+COPY paket.dependencies ./
 
 # Copy csproj and restore as distinct layers
 COPY MauticActionWorker ./
-RUN dotnet restore
+RUN dotnet tool install paket
+RUN dotnet tool restore
+RUN dotnet paket restore
 
 # Copy everything else and build
 RUN dotnet publish -c Release -o out

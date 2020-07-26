@@ -3,3 +3,5 @@
 **/out/**/*
 .idea
 MauticAction.sln.DotSettings.user
+.paket/
+paket-files
