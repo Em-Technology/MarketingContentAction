@@ -1,5 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{CA29CE54-AF7D-41BB-B489-C526932CCD8D}"
+	ProjectSection(SolutionItems) = preProject
+		paket.dependencies = paket.dependencies
+	EndProjectSection
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauticActionWorker", "MauticActionWorker\MauticActionWorker.csproj", "{034E34AC-33B5-4323-B7CD-002537CD22EF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmtechActions", "EmtechActions\EmtechActions.csproj", "{BFFB7F7E-3506-43B9-88D0-8B53A4FFC7AF}"

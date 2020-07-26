@@ -1,0 +1,26 @@
+{
+  "name": "MarketingContentAction.NET",
+  "version": "0.0.1",
+  "description": "The action used by github to update marketing content endpoints on behalf of users using git to host content",
+  "main": "index.js",
+  "repository": "git@github.com:Em-Technology/MauticAction.git",
+  "author": "Em Jones <emjonesdev@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "cz-conventional-changelog": "3.2.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "scripts": {
+    "commit": "git-cz"
+  }
+}

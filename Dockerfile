@@ -2,7 +2,7 @@
 WORKDIR /app/worker
 COPY EmtechActions/ /app/EmtechActions
 COPY .config/ ./
-COPY paket.dependencies ./
+COPY paket.* ./
 
 # Copy csproj and restore as distinct layers
 COPY MauticActionWorker ./
