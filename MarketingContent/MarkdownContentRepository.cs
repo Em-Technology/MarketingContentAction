@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Runtime.CompilerServices;
+using EmTech.ContentFileSystem;
+using Microsoft.FSharp.Core;
 
 [assembly: InternalsVisibleTo("EmtechActionsTests")]
 namespace MarketingContent
@@ -10,11 +12,13 @@ namespace MarketingContent
             new Lazy<IContentRepository>(() => new MarkdownContentRepository());
         public static IContentRepository Repository => ContentRepository.Value;
 
-        
+        private Unit GetCurrentDirectoryFiles() => FileManagement.logCurrentDirectory;
+        private Unit GetCurrentEnv() => Env.printVariablesAndValues;
         public Content GetNewPosts(ContentQuery query)
         {
-            
-           return new Content(); 
+            GetCurrentEnv();
+            GetCurrentDirectoryFiles();
+            return new Content(); 
         }
     }
 }

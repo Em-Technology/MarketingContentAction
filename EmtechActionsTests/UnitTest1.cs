@@ -16,7 +16,7 @@ namespace EmtechActionsUnitTests
     [Test]
     public void Test1()
     {
-      var list = new List();
+      MarkdownContentRepository.Repository.GetNewPosts(new ContentQuery());
     }
   }
 }

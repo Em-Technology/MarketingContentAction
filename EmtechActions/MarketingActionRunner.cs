@@ -1,10 +1,13 @@
-﻿namespace EmtechActions
+﻿using MarketingContent;
+
+namespace EmtechActions
 {
     public class MarketingActionRunner : IActionRunner
     {
         public void Run()
         {
-            throw new System.NotImplementedException();
+            var loader = ContentLoaderFactory.AddContentLoader(ContentSource.Markdown);
+            loader.GetContent(new ContentQuery());
         }
     }
 }
