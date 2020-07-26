@@ -1,17 +1,12 @@
-
-name: 'content-update'
-
-author: 'Em Jones <emjonesdev@gmail.com>'
-
-description: 'Using some metadata as defined by your subscriber, update your downstream dependencies with new content updates.'
-
+name: 'Marketing Content Updater'
+description: 'Updates to content folder markdown files are forwarded on to arbitrary rest endpoints'
 inputs: 
-  marketingServer:
-    description: 'Tell us where your content is headed'
+  marketing-content-api:
+    description: 'Location of the mautic service'
     required: true
   token:
-    description: 'Authentication token'
     required: true
-runs: 
+    description: 'Auth token for use by action'
+runs:
   using: 'docker'
   image: 'Dockerfile'

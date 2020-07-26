@@ -1,5 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{CA29CE54-AF7D-41BB-B489-C526932CCD8D}"
+	ProjectSection(SolutionItems) = preProject
+		paket.dependencies = paket.dependencies
+	EndProjectSection
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauticActionWorker", "MauticActionWorker\MauticActionWorker.csproj", "{034E34AC-33B5-4323-B7CD-002537CD22EF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmtechActions", "EmtechActions\EmtechActions.csproj", "{BFFB7F7E-3506-43B9-88D0-8B53A4FFC7AF}"
@@ -8,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmtechActionsTests", "Emtec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketingContent", "MarketingContent\MarketingContent.csproj", "{F0680DFC-59EE-4499-A09E-63C26440BBCF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emtech.MauticAction.SpecflowTests", "Emtech.MauticAction.SpecflowTests\Emtech.MauticAction.SpecflowTests.csproj", "{28777FD7-6F64-42CD-9E4F-6074E4CD9AFB}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "EmTech.ContentFileSystem", "EmTech.ContentFileSystem\EmTech.ContentFileSystem.fsproj", "{C17C46C1-5BC4-4F4E-8234-7BC18E1362E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,9 +37,9 @@ Global
 		{F0680DFC-59EE-4499-A09E-63C26440BBCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0680DFC-59EE-4499-A09E-63C26440BBCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0680DFC-59EE-4499-A09E-63C26440BBCF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{28777FD7-6F64-42CD-9E4F-6074E4CD9AFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{28777FD7-6F64-42CD-9E4F-6074E4CD9AFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{28777FD7-6F64-42CD-9E4F-6074E4CD9AFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{28777FD7-6F64-42CD-9E4F-6074E4CD9AFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C17C46C1-5BC4-4F4E-8234-7BC18E1362E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C17C46C1-5BC4-4F4E-8234-7BC18E1362E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C17C46C1-5BC4-4F4E-8234-7BC18E1362E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C17C46C1-5BC4-4F4E-8234-7BC18E1362E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -1,6 +1,4 @@
-﻿using Microsoft.Extensions.Configuration;
-
-namespace EmtechActions
+﻿namespace EmtechActions
 {
     internal class ConfigFactory
     {
