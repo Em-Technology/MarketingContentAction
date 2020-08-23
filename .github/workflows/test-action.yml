@@ -1,0 +1,12 @@
+﻿on: [push]
+jobs:
+  run_action:
+    runs-on: ubuntu-latest
+    name: Testing the run action
+    steps:
+      - name: Get changed files
+        id: updated_files
+        uses: actions/MarketingContentAction@v0.0.1
+        with:
+          marketing-content-api: test-api
+          token: test-token
