@@ -5,8 +5,10 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <Compile Include="AssemblyInfo.fs" />
         <Compile Include="FileManagement.fs" />
         <Compile Include="Env.fs" />
+        <Content Include="paket.template" />
     </ItemGroup>
 
 </Project>

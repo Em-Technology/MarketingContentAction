@@ -1,0 +1,3 @@
+nuget EmTech.ContentFileSystem
+nuget FSharp.Core
+nuget YamlDotNet
