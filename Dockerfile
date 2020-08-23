@@ -3,7 +3,7 @@ WORKDIR /app
 
 COPY ./EmtechActions/EmtechActions.csproj ./EmtechActions/EmtechActions.csproj
 COPY ./MauticActionWorker/MauticActionWorker.csproj ./MauticActionWorker/MauticActionWorker.csproj
-
+COPY ./EmTech.ContentFileSystem/EmTech.ContentFileSystem.fsproj ./EmTech.ContentFileSystem/Emtech.ContentFileSystem.fsproj
 COPY paket.dependencies ./paket.dependencies
 COPY paket.lock ./paket.lock
 COPY ./.config ./.config
