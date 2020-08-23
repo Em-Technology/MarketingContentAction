@@ -4,9 +4,20 @@ jobs:
     runs-on: ubuntu-latest
     name: Testing the run action
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Get current application
+        uses: jitterbit/get-changed-files@v1
+        id: files
+        with:
+          # Format of the steps output context.
+          # Can be 'space-delimited', 'csv', or 'json'.
+          # Default: 'space-delimited'
+          format: 'json' 
       - name: Get changed files
         id: updated_files
-        uses: actions/MarketingContentAction@v0.0.1
+        uses: Em-Technology/MarketingContentAction@v0.0.1
         with:
           marketing-content-api: test-api
-          token: test-token
+          token: ${{ secrets.API_TOKEN }}
+          files: ${{ steps.files.outputs.all }}
