@@ -1,0 +1,5 @@
+nuget FSharp.Core
+nuget YamlDotNet
+nuget Microsoft.Extensions.DependencyInjection
+nuget LanguageExt.FSharp
+nuget LanguageExt.Core

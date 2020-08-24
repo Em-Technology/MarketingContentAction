@@ -1,8 +1,9 @@
 source https://api.nuget.org/v3/index.json
-source EmTech.ContentFileSystem
 
 storage: none
 framework: netcoreapp3.1, netstandard2.0, netstandard2.1
+nuget LanguageExt.Core 3.5.13-beta beta
+nuget LanguageExt.FSharp 3.5.13-beta beta
 nuget Microsoft.Extensions.Configuration
 nuget Microsoft.Extensions.DependencyInjection
 nuget Microsoft.Extensions.Hosting
@@ -13,6 +14,5 @@ nuget nunit 3.12.0
 nuget NUnit3TestAdapter 3.15.1
 nuget GitVersion.CommandLine 5.3.7
 nuget Microsoft.Extensions.DependencyInjection.Abstractions 3.1.6
-nuget EmTech.ContentFileSystem 0.0.1.1
 nuget FSharp.Core 4.7.2
 nuget YamlDotNet 8.1.2

@@ -5,13 +5,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{CA29CE
 		paket.dependencies = paket.dependencies
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauticActionWorker", "MauticActionWorker\MauticActionWorker.csproj", "{034E34AC-33B5-4323-B7CD-002537CD22EF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmTech.MarketingContentAggregator", "EmTech.MarketingContentAggregator\EmTech.MarketingContentAggregator.csproj", "{034E34AC-33B5-4323-B7CD-002537CD22EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmtechActions", "EmtechActions\EmtechActions.csproj", "{BFFB7F7E-3506-43B9-88D0-8B53A4FFC7AF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmTech.Actions", "EmTech.Actions\EmTech.Actions.csproj", "{BFFB7F7E-3506-43B9-88D0-8B53A4FFC7AF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmtechActionsTests", "EmtechActionsTests\EmtechActionsTests.csproj", "{95731244-1F20-4D25-9CD7-3FA20F3819D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketingContent", "MarketingContent\MarketingContent.csproj", "{F0680DFC-59EE-4499-A09E-63C26440BBCF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmTech.MarketingContent", "EmTech.MarketingContent\EmTech.MarketingContent.csproj", "{F0680DFC-59EE-4499-A09E-63C26440BBCF}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "EmTech.ContentFileSystem", "EmTech.ContentFileSystem\EmTech.ContentFileSystem.fsproj", "{C17C46C1-5BC4-4F4E-8234-7BC18E1362E6}"
 EndProject

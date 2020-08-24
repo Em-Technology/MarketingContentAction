@@ -18,9 +18,9 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\EmtechActions\EmtechActions.csproj" />
-        <ProjectReference Include="..\MarketingContent\MarketingContent.csproj" />
-        <ProjectReference Include="..\MauticActionWorker\MauticActionWorker.csproj" />
+        <ProjectReference Include="..\EmTech.Actions\EmTech.Actions.csproj" />
+        <ProjectReference Include="..\EmTech.MarketingContentAggregator\EmTech.MarketingContentAggregator.csproj" />
+        <ProjectReference Include="..\EmTech.MarketingContent\EmTech.MarketingContent.csproj" />
     </ItemGroup>
 
 </Project>

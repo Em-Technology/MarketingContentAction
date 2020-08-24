@@ -1,0 +1,5 @@
+﻿Microsoft.Extensions.Logging.Abstractions
+Microsoft.Extensions.DependencyInjection.Abstractions
+Microsoft.Extensions.Configuration
+LanguageExt.Core
+LanguageExt.FSharp

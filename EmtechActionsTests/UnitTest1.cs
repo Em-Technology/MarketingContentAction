@@ -1,5 +1,5 @@
 using System;
-using MarketingContent;
+using EmTech.MarketingContent;
 using NUnit.Framework;
 
 namespace EmtechActionsUnitTests
