@@ -16,7 +16,7 @@ jobs:
           format: 'json' 
       - name: Get changed files
         id: updated_files
-        uses: Em-Technology/MarketingContentAction@v0.0.2
+        uses: Em-Technology/MarketingContentAction@v0.0.3
         with:
           marketing-content-api: test-api
           token: ${{ secrets.API_TOKEN }}
